@@ -120,7 +120,7 @@ export default function PricingCalculator() {
       </div>
 
       <p className="text-xs text-text-primary/40 mt-4 text-center">
-        *Based on {users} users. Your system sized for {calculation.concurrentCalls} simultaneous calls ({calculation.licenseSize} channel license at $30/channel).
+        *Pricing shown is based on typical usage. Taxes and fees additional.
       </p>
     </div>
   );
