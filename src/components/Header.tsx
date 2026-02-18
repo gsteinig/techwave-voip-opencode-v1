@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Logo from "./Logo";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -20,12 +21,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 w-full z-50 border-b border-black/5 bg-white/80 apple-blur">
       <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="bg-primary p-1.5 rounded-[5px]">
-            <span className="material-symbols-outlined text-white text-[20px]">waves</span>
-          </div>
-          <span className="text-xl font-bold tracking-tight text-text-primary">TechWave</span>
-        </Link>
+        <Logo />
 
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (

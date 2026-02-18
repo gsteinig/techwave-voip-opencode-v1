@@ -359,13 +359,6 @@ export default function Home() {
                     US-Based Support Team
                   </li>
                 </ul>
-                    Global Infrastructure
-                  </li>
-                  <li className="flex items-center gap-3 text-text-primary font-medium">
-                    <span className="material-symbols-outlined text-primary">verified</span>
-                    US-Based Support Team
-                  </li>
-                </ul>
                 <Link href="/about" className="inline-flex items-center gap-2 font-bold text-link hover:underline">
                   Learn more about us
                   <span className="material-symbols-outlined">arrow_right_alt</span>
