@@ -7,60 +7,6 @@ export const metadata = {
 };
 
 export default function Pricing() {
-  const plans = [
-    {
-      name: "Starter",
-      description: "For small teams with light calling needs",
-      price: "From $99",
-      period: "/month",
-      features: [
-        "Up to 5 concurrent calls",
-        "Unlimited extensions",
-        "Mobile app included",
-        "Desktop softphone included",
-        "Basic call routing",
-        "Voicemail to email",
-        "Email support",
-      ],
-    },
-    {
-      name: "Business",
-      description: "For growing teams with moderate call volume",
-      price: "From $199",
-      period: "/month",
-      popular: true,
-      features: [
-        "Up to 10 concurrent calls",
-        "Unlimited extensions",
-        "Mobile app included",
-        "Desktop softphone included",
-        "Advanced call routing",
-        "Call queues",
-        "Auto attendant",
-        "Call recording",
-        "Priority support",
-      ],
-    },
-    {
-      name: "Enterprise",
-      description: "For larger organizations with high call demand",
-      price: "From $399",
-      period: "/month",
-      features: [
-        "Up to 25 concurrent calls",
-        "Unlimited extensions",
-        "Mobile app included",
-        "Desktop softphone included",
-        "Advanced call routing",
-        "Call queues with analytics",
-        "Multi-level auto attendant",
-        "Unlimited call recording",
-        "Dedicated account manager",
-        "24/7 phone support",
-      ],
-    },
-  ];
-
   return (
     <div className="font-body bg-background text-text-primary">
       <main className="pt-16">
@@ -88,62 +34,6 @@ export default function Pricing() {
               </p>
             </div>
             <PricingCalculator />
-          </div>
-        </section>
-
-        {/* Plans */}
-        <section className="py-24">
-          <div className="max-w-[1200px] mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {plans.map((plan, index) => (
-                <div
-                  key={index}
-                  className={`relative rounded-[5px] border p-8 ${
-                    plan.popular
-                      ? "border-primary shadow-lg"
-                      : "border-black/5"
-                  }`}
-                >
-                  {plan.popular && (
-                    <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                      <span className="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
-                        MOST POPULAR
-                      </span>
-                    </div>
-                  )}
-                  <h3 className="font-heading text-2xl font-bold text-text-primary">
-                    {plan.name}
-                  </h3>
-                  <p className="text-text-primary/60 mt-2 mb-6">{plan.description}</p>
-                  <div className="mb-6">
-                    <span className="text-4xl font-bold text-text-primary">
-                      {plan.price}
-                    </span>
-                    <span className="text-text-primary/60">{plan.period}</span>
-                  </div>
-                  <ul className="space-y-3 mb-8">
-                    {plan.features.map((feature, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm">
-                        <span className="material-symbols-outlined text-primary text-sm">
-                          check
-                        </span>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                  <Link
-                    href="/contact"
-                    className={`block text-center rounded-[5px] py-3 font-semibold transition-all ${
-                      plan.popular
-                        ? "bg-accent text-white hover:bg-accent/90"
-                        : "bg-bg-light text-text-primary hover:bg-gray-200"
-                    }`}
-                  >
-                    Get Started
-                  </Link>
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 

@@ -120,7 +120,7 @@ export default function PricingCalculator() {
       </div>
 
       <p className="text-xs text-text-primary/40 mt-4 text-center">
-        *Pricing shown is based on typical usage. Taxes and fees additional.
+        *Pricing shown is based on typical usage. Taxes and fees additional. Annual license fee applies.
       </p>
     </div>
   );

@@ -22,7 +22,7 @@ export default function Home() {
             </h1>
             <p className="font-body mx-auto mt-8 max-w-2xl text-[28px] leading-relaxed text-text-primary/60">
               Stop losing customers to dropped calls. Stop overpaying for extensions you don't use. 
-              Send us your bill and we'll show you exactly what you could save.
+              Send us your bill—we'll show you exactly what you could save.
             </p>
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
