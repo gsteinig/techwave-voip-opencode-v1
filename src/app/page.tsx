@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ProblemsGrid } from "@/components/ui/BentoGrid";
 
 export default function Home() {
   return (
@@ -80,109 +81,12 @@ export default function Home() {
                 Common pain points that cost your business money every month—and how we solve them.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Problem 1 */}
-              <div className="group relative overflow-hidden rounded-[5px] border border-black/5 bg-bg-light p-8 transition-all hover:shadow-xl">
-                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-[5px] bg-red-100 text-red-600">
-                  <span className="material-symbols-outlined text-3xl">phone_disabled</span>
-                </div>
-                <h3 className="font-heading text-xl font-bold text-text-primary mb-3">Dropped Calls</h3>
-                <p className="text-text-primary/60 mb-4">
-                  Calls cutting out during important conversations with customers and prospects.
-                </p>
-                <div className="border-t border-black/5 pt-4">
-                  <p className="text-sm font-medium text-primary">→ Our solution</p>
-                  <p className="text-sm text-text-primary/60">
-                    Network readiness check included. We measure jitter, delay, and packet loss before we deploy anything.
-                  </p>
-                </div>
-              </div>
-
-              {/* Problem 2 */}
-              <div className="group relative overflow-hidden rounded-[5px] border border-black/5 bg-bg-light p-8 transition-all hover:shadow-xl">
-                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-[5px] bg-amber-100 text-amber-600">
-                  <span className="material-symbols-outlined text-3xl">receipt_long</span>
-                </div>
-                <h3 className="font-heading text-xl font-bold text-text-primary mb-3">Paying for Empty Seats</h3>
-                <p className="text-text-primary/60 mb-4">
-                  Paying for extensions for departed employees, vacationing staff, or part-timers.
-                </p>
-                <div className="border-t border-black/5 pt-4">
-                  <p className="text-sm font-medium text-primary">→ Our solution</p>
-                  <p className="text-sm text-text-primary/60">
-                    Concurrent-call pricing. Pay for the calls you make, not the names on a list.
-                  </p>
-                </div>
-              </div>
-
-              {/* Problem 3 */}
-              <div className="group relative overflow-hidden rounded-[5px] border border-black/5 bg-bg-light p-8 transition-all hover:shadow-xl">
-                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-[5px] bg-blue-100 text-blue-600">
-                  <span className="material-symbols-outlined text-3xl">wifi_off</span>
-                </div>
-                <h3 className="font-heading text-xl font-bold text-text-primary mb-3">Outages</h3>
-                <p className="text-text-primary/60 mb-4">
-                  Phone system going down and missing customer calls.
-                </p>
-                <div className="border-t border-black/5 pt-4">
-                  <p className="text-sm font-medium text-primary">→ Our solution</p>
+            <ProblemsGrid />
+          </div>
+        </section>
                   <p className="text-sm text-text-primary/60">
                     99.99% uptime SLA. Redundant data centers. We monitor your call quality 24/7.
                   </p>
-                </div>
-              </div>
-
-              {/* Problem 4 */}
-              <div className="group relative overflow-hidden rounded-[5px] border border-black/5 bg-bg-light p-8 transition-all hover:shadow-xl">
-                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-[5px] bg-purple-100 text-purple-600">
-                  <span className="material-symbols-outlined text-3xl">settings_suggest</span>
-                </div>
-                <h3 className="font-heading text-xl font-bold text-text-primary mb-3">Complex Setup</h3>
-                <p className="text-text-primary/60 mb-4">
-                  Fear of disruption during migration from legacy phone systems.
-                </p>
-                <div className="border-t border-black/5 pt-4">
-                  <p className="text-sm font-medium text-primary">→ Our solution</p>
-                  <p className="text-sm text-text-primary/60">
-                    Week-ish migration. Number porting handled. We test everything before you switch.
-                  </p>
-                </div>
-              </div>
-
-              {/* Problem 5 */}
-              <div className="group relative overflow-hidden rounded-[5px] border border-black/5 bg-bg-light p-8 transition-all hover:shadow-xl">
-                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-[5px] bg-green-100 text-green-600">
-                  <span className="material-symbols-outlined text-3xl">phonelink_ring</span>
-                </div>
-                <h3 className="font-heading text-xl font-bold text-text-primary mb-3">Can't Work Remotely</h3>
-                <p className="text-text-primary/60 mb-4">
-                  Team needs to work from anywhere but phone stays at the office.
-                </p>
-                <div className="border-t border-black/5 pt-4">
-                  <p className="text-sm font-medium text-primary">→ Our solution</p>
-                  <p className="text-sm text-text-primary/60">
-                    Softphone and mobile app included. Take your business number on any device.
-                  </p>
-                </div>
-              </div>
-
-              {/* Problem 6 */}
-              <div className="group relative overflow-hidden rounded-[5px] border border-black/5 bg-bg-light p-8 transition-all hover:shadow-xl">
-                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-[5px] bg-primary/10 text-primary">
-                  <span className="material-symbols-outlined text-3xl">support_agent</span>
-                </div>
-                <h3 className="font-heading text-xl font-bold text-text-primary mb-3">No Support</h3>
-                <p className="text-text-primary/60 mb-4">
-                  Stuck on hold with overseas support when something breaks.
-                </p>
-                <div className="border-t border-black/5 pt-4">
-                  <p className="text-sm font-medium text-primary">→ Our solution</p>
-                  <p className="text-sm text-text-primary/60">
-                    US-based support. Real people who answer the phone. We know your system.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
