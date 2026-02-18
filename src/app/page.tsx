@@ -326,7 +326,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Powered by Yeastar */}
+        {/* Enterprise Infrastructure */}
         <section className="py-24 bg-bg-light">
           <div className="max-w-[1200px] mx-auto px-6">
             <div className="flex flex-col lg:flex-row items-center gap-16">
@@ -335,16 +335,20 @@ export default function Home() {
                   Enterprise Grade Infrastructure
                 </div>
                 <h2 className="font-heading text-[34px] font-bold tracking-tight text-text-primary mb-6">
-                  Powered by Yeastar
+                  Built for Business Reliability
                 </h2>
                 <p className="text-lg leading-relaxed text-text-primary/60 mb-8">
-                  We partner with Yeastar, the platform trusted by over 10,000 SMBs worldwide. 
-                  TechWave combines enterprise-grade infrastructure with local support and fair pricing.
+                  TechWave VoIP is built on enterprise-grade infrastructure with the security and 
+                  reliability your business needs. We combine robust technology with local support and fair pricing.
                 </p>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-center gap-3 text-text-primary font-medium">
                     <span className="material-symbols-outlined text-primary">verified</span>
-                    ISO 27001 Certified Security
+                    ISO 27001 Certified
+                  </li>
+                  <li className="flex items-center gap-3 text-text-primary font-medium">
+                    <span className="material-symbols-outlined text-primary">verified</span>
+                    SOC 2 Type II Compliant
                   </li>
                   <li className="flex items-center gap-3 text-text-primary font-medium">
                     <span className="material-symbols-outlined text-primary">verified</span>
@@ -352,6 +356,9 @@ export default function Home() {
                   </li>
                   <li className="flex items-center gap-3 text-text-primary font-medium">
                     <span className="material-symbols-outlined text-primary">verified</span>
+                    US-Based Support Team
+                  </li>
+                </ul>
                     Global Infrastructure
                   </li>
                   <li className="flex items-center gap-3 text-text-primary font-medium">

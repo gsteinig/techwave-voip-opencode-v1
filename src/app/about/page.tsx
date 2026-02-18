@@ -87,22 +87,21 @@ export default function About() {
           </div>
         </section>
 
-        {/* Partner */}
+        {/* Infrastructure */}
         <section className="py-24">
           <div className="max-w-[800px] mx-auto px-6">
             <h2 className="font-heading text-[34px] font-bold text-text-primary mb-6">
-              Powered by Yeastar
+              Enterprise-Grade Infrastructure
             </h2>
             <p className="text-lg text-text-primary/60 mb-8">
-              TechWave is built on Yeastar's enterprise-grade platform—the same platform trusted 
-              by over 10,000 businesses worldwide. We combine their robust infrastructure with our 
-              local support and fair pricing model.
+              TechWave VoIP is built on enterprise-grade infrastructure with the security certifications 
+              and reliability your business demands. We combine robust technology with local support and fair pricing.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
                 "ISO 27001 Certified",
+                "SOC 2 Type II",
                 "99.99% Uptime",
-                "Global Infrastructure",
                 "24/7 Monitoring",
               ].map((item, i) => (
                 <div key={i} className="bg-bg-light p-4 rounded-[5px] text-center">
