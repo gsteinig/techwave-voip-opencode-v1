@@ -56,8 +56,8 @@ const BentoCard = ({
       <p className="text-text-primary/60">{description}</p>
     </div>
 
-    <div className="pointer-events-none absolute bottom-0 flex w-full flex-row items-center gap-2 border-t border-black/5 bg-white/90 p-4 backdrop-blur-sm">
-      <div className="flex-1">
+    <div className="pointer-events-none absolute bottom-0 flex w-full flex-col gap-3 border-t border-black/5 bg-white/90 p-4 backdrop-blur-sm">
+      <div>
         <p className="text-xs font-medium text-primary">→ Our solution</p>
         <p className="text-xs text-text-primary/60">{solution}</p>
       </div>
