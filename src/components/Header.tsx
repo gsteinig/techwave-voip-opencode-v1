@@ -40,6 +40,10 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-4">
+          <a href="tel:+17273141215" className="hidden lg:flex items-center gap-2 text-sm text-text-primary/70 hover:text-primary">
+            <span className="material-symbols-outlined text-sm">phone</span>
+            (727) 314-1215
+          </a>
           <Link
             href="/contact"
             className="hidden sm:flex items-center justify-center rounded-[5px] bg-primary px-5 py-2 text-sm font-semibold text-white transition-all hover:bg-primary/90 active:scale-95"

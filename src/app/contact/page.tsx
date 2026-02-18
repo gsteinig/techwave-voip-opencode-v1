@@ -185,7 +185,7 @@ export default function Contact() {
                   phone
                 </span>
                 <h3 className="font-heading font-bold text-text-primary mb-2">Phone</h3>
-                <p className="text-text-primary/60">(555) 123-4567</p>
+                <a href="tel:+17273141215" className="text-text-primary/60 hover:text-primary">(727) 314-1215</a>
               </div>
               <div>
                 <span className="material-symbols-outlined text-3xl text-primary mb-4 block mx-auto">

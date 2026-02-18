@@ -84,11 +84,6 @@ export default function Home() {
             <ProblemsGrid />
           </div>
         </section>
-                  <p className="text-sm text-text-primary/60">
-                    99.99% uptime SLA. Redundant data centers. We monitor your call quality 24/7.
-                  </p>
-          </div>
-        </section>
 
         {/* How It Works */}
         <section className="py-24 bg-bg-light">
