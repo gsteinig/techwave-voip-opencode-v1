@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PricingCalculator from "@/components/PricingCalculator";
 
 export const metadata = {
   title: "Pricing | TechWave VoIP",
@@ -75,33 +76,18 @@ export default function Pricing() {
           </div>
         </section>
 
-        {/* Pricing Model Explanation */}
+        {/* Pricing Calculator */}
         <section className="py-16 border-b border-black/5">
-          <div className="max-w-[800px] mx-auto px-6">
-            <div className="bg-bg-light rounded-[5px] p-8">
-              <h2 className="font-heading text-xl font-bold text-text-primary mb-4">
-                How our pricing works
+          <div className="max-w-[900px] mx-auto px-6">
+            <div className="text-center mb-8">
+              <h2 className="font-heading text-2xl font-bold text-text-primary mb-2">
+                See your potential savings
               </h2>
-              <p className="text-text-primary/60 mb-6">
-                Most VoIP providers charge per user—whether they're on a call or not. 
-                We charge by simultaneous (concurrent) calls. If you have 20 employees but only 5 
-                ever call at once, you pay for 5, not 20.
+              <p className="text-text-primary/60">
+                Most providers charge per extension. We charge for what you actually use.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="text-center">
-                  <p className="text-3xl font-bold text-primary">20</p>
-                  <p className="text-sm text-text-primary/60">Employees</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-3xl font-bold text-primary">5</p>
-                  <p className="text-sm text-text-primary/60">Making calls at once</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-3xl font-bold text-accent">75%</p>
-                  <p className="text-sm text-text-primary/60">Potential savings</p>
-                </div>
-              </div>
             </div>
+            <PricingCalculator />
           </div>
         </section>
 
