@@ -15,7 +15,7 @@ const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid w-full auto-rows-[22rem] grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4",
+        "grid w-full auto-rows-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4",
         className,
       )}
     >
@@ -75,42 +75,36 @@ const problems = [
     name: "Dropped Calls",
     description: "Calls cutting out during important conversations.",
     solution: "Network readiness check included. We measure jitter, delay, and packet loss.",
-    className: "lg:row-start-1 lg:row-end-2",
   },
   {
     Icon: Receipt,
     name: "Paying for Empty Seats",
     description: "Paying for extensions you don't use.",
     solution: "Pay for calls you make, not names on a list.",
-    className: "lg:col-start-2 lg:row-start-1 lg:row-end-2",
   },
   {
     Icon: WifiOff,
     name: "Outages",
     description: "Phone system going down and missing calls.",
     solution: "99.99% uptime SLA with redundant data centers.",
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-2 lg:row-end-3",
   },
   {
     Icon: Settings,
     name: "Complex Setup",
     description: "Fear of disruption during migration.",
     solution: "Week-ish migration. We test everything first.",
-    className: "lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3",
   },
   {
     Icon: Phone,
     name: "Can't Work Remotely",
     description: "Team needs to work from anywhere.",
     solution: "Softphone and mobile app included.",
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
   },
   {
     Icon: Headset,
     name: "No Support",
     description: "Stuck on hold with overseas support.",
     solution: "US-based support. Real people who answer.",
-    className: "lg:col-start-2 lg:col-end-3 lg:row-start-3 lg:row-end-4",
   },
 ];
 
