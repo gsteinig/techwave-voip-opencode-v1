@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode } from "react";
-import { ArrowRight, Phone, Receipt, WifiOff, Settings, PhoneOff, SupportAgent } from "lucide-react";
+import { ArrowRight, Phone, PhoneOff, WifiOff, Settings, Receipt, Headset } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
@@ -106,7 +106,7 @@ const problems = [
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
   },
   {
-    Icon: SupportAgent,
+    Icon: Headset,
     name: "No Support",
     description: "Stuck on hold with overseas support.",
     solution: "US-based support. Real people who answer.",
