@@ -74,7 +74,7 @@ export default function Contact() {
                   onChange={(e) => setFile(e.target.files?.[0] || null)}
                   className="hidden"
                   id="bill-upload"
-                }
+                />
                 <label htmlFor="bill-upload" className="cursor-pointer">
                   <span className="material-symbols-outlined text-4xl text-text-primary/40 mb-4 block mx-auto">
                     upload_file
